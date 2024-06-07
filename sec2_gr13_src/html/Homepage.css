@@ -1,0 +1,624 @@
+*{ /* adjust all - set font and magin*/
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+/*Header details*/
+header { 
+    background-color: #1f201d;
+    color: aliceblue;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+header h1{
+    display: inline-flex;
+    align-items: center;
+}
+
+header h1 i{
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+
+/*Set position of call class*/
+.call {
+    float: right;
+    margin-top: 15px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 10px;
+}
+
+/*Detail of text  "call center 1690"*/
+.call a{
+    font-size: 9px;
+    text-align: center;
+    padding-left: 10px;
+}   
+
+/*Set position of login button*/
+.login {
+    float: right;
+    border-radius: 10px; 
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+   
+}
+
+/*Detail of text inside ligin button*/
+.login i a{
+    padding: 2px;
+    color: #3A3D32;
+    text-decoration: none; /*remove the line of link*/
+}
+
+/*Navigation part*/
+nav{
+   display: flex; /*same line*/
+   flex-direction: row; /* deifines it to be row*/
+   background-color: #A2ADAF;
+
+   /*adjust position*/
+   position: relative;
+   margin: 0 auto;
+   padding: 9px;
+   justify-content: space-evenly;
+}
+
+/*detail of text inside navigation*/
+nav a{
+    display: block;
+    color: white;
+    font-weight: 550;
+    text-decoration: none;
+    transition: all 0.2s ease; /*time when texts change color*/
+}
+
+/*change color when texts are hovered*/
+nav a:hover{
+    color: #3A3D32;
+}
+
+
+/*section part*/
+/*define background image*/
+section{
+  background-image: url('https://drive.google.com/uc?id=1hD81poCSN1GF7Km1gs6XPN1fMqKJPMGh');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 150px ;
+  text-align: center;
+}
+
+/*detail and position of texts*/
+section h1{
+  font-size: 70px;
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+section h4{
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/*design color & position of search button*/
+.search{    
+    border-radius: 15px; 
+    background-color: #000000;
+    padding: 8px;
+    border: none;
+}
+
+/*detail of text inside button*/
+.search a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*when a box is hovered*/
+.box :hover{
+    background-color: #d1964c;
+    color: white;  
+}
+
+/*article part*/
+article{
+    background-color: white;
+    text-align: center;   
+    margin: o auto;
+}
+
+/*detial of two text above*/
+article h1{
+    color: black;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 2px;
+    text-shadow: 20px -10px #d3d3d3; /*shadow*/
+}
+
+article h4{
+  color: black;
+  font-size: 15px;
+}
+
+/*define detail of icon*/
+article h4 i{
+    padding: 8px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*detail of name table*/
+article h2{
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+}
+
+/* Three columns side by side */
+.row{ /* position of all container*/
+    margin-left: 8%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 22%;
+    margin-bottom: 14px;
+    padding: 0 12px;
+  }
+  
+  
+  /* add shadows */
+  .card {
+    background-color: #A2ADAF;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+
+  }
+  
+  /* some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+    padding-bottom: 10px;
+    
+  }
+
+  /* clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /*detail of button inside container*/
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    background-color:#474747;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 25px;
+  }
+  
+  /*when buttons are hovered*/
+  .button:hover {
+    background-color:#313131;
+  }
+
+  /*article's event part*/
+  /*detail of header text*/
+  
+  .Event{
+    display: flex;
+    float: left;
+    margin-left: 0px;
+    padding: 0px 16px;
+    margin-bottom: 50px;
+  }
+
+  .NewEvent{
+    margin-top: 20px;
+    text-shadow: 20px -10px #d3d3d3;
+  }
+
+  /*color, position, width, height of a first ig post*/
+  .post{
+    background-color: white;
+    border-radius: 15px;
+    width: 300px;
+    height: fit-content;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 8%;  
+  }
+
+  /*position of post's upper*/
+  .post .upper{
+    padding: 10px 24px;
+    display: flex;
+    float: left;
+  }
+
+  /*icon & name of user*/
+  .post .upper .profile{
+    width: 55px;
+    height: 45px;
+    position: relative;
+    padding-top: 5px;
+  }
+
+  /*define size of icon user*/
+  .post .upper .profile i{
+    font-size: 25px;
+    padding-top: 1px;
+  }
+
+  /*user's name*/
+  .post .upper .text{
+    text-align: left;
+    padding-top: 3px;
+  }
+
+  /*body part of a first ig post*/
+  .post .body{
+    height: 280px;
+    width: 100%;
+    position: relative;
+  }
+
+  /*size of picture*/
+  .post .body img{
+    width: 100%;
+    height: 100;
+    object-fit: cover;
+  }
+
+  /*lower part*/
+  /*position of icons*/
+  .post .lower{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+  }
+
+  /*magin between icons left & right*/
+  .post .lower .left i{
+    margin-right: 16px;
+  }
+
+  /*content1 part*/
+  /*detail of all text*/
+  .Event .content1{
+    padding-left: 20px;
+    float: left;
+  }
+
+  .Event .content1 .title{
+    text-align: left;
+  }
+
+  .Event .content1 h2{
+    text-align: left;
+    font-size: 30px;
+    color: #000000;
+  }
+
+  .Event .content1 p{
+    font-size: 15px;
+    text-align: left;
+  }
+
+  /*hide button*/
+  .Event .content1 button{
+    float: left;
+    width: 90%;
+    background: none;
+    border: none;
+    border-radius: 15px;
+    padding: 1%;
+  }
+
+/*a second ig post part*/
+.post2{
+    float: right;
+    background-color: white;
+    border-radius: 15px;
+    width: 300px;
+    height: fit-content;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+    margin-right: 8%;
+}  
+
+.post2 .upper2{
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+}
+
+.post2 .upper2 .profile{
+    width: 55px;
+    height: 45px;
+    position: relative;
+    padding-top: 5px;
+    margin-right: 6px;
+}
+
+.post2 .upper2 i{
+    font-size: 25px;
+    padding-top: 8px;
+}
+
+.post2 .body2{
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.post2 .body2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post2 .lower2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+}
+
+.post2 .lower2 .left2 i{
+    margin-right: 16px;
+}
+
+/*content2 part*/
+/*detail of all text*/
+.Event2{
+    display: flex;
+    float: right;
+    margin-bottom: 50px;
+    margin-right: 2%;
+}
+
+.Event2 .content2 .title{
+    text-align: right;
+}
+
+.Event2 .content2 h2{
+    text-align: right;
+    font-size: 30px;
+    color: #000000;
+}
+
+.Event2 .content2 button{
+    float: right;
+    width: 85%;
+    background: none;
+    border: none;
+    margin-right: 20px;
+}
+
+.Event2 .content2 p{
+    font-size: 15px;
+    text-align: left;
+}
+
+/*Our service part*/
+/* Three columns side by side */
+.service .row{
+  text-align: center;
+}
+
+/*position of each columns*/
+.service .row .colum{
+  float: center;
+  display: flex;
+  margin-bottom: 14px;
+  margin-left: 12%;
+  margin-right: 10%;
+}
+
+/*detail of buttons*/ 
+.service .row .colum button{
+  background-color: none;
+  padding: 25px 50px;
+  margin: 5px 16px;
+  border-radius: 12px;
+  background:none;
+  width: 300px;
+}
+
+/*detail of icons*/
+.service .row .colum i{
+  font-size: 30px;
+  padding: 10px;
+}
+
+/*detail of texts inside button*/
+.service .row .colum p{
+  font-size: large;
+  font-weight: bold;
+}
+
+/* when buttons are hovered*/
+.service .row .colum button:hover{
+  background: #818181;
+}
+
+/*footer part*/
+footer{
+  background-color: #1f201d;
+  color: white;
+  padding: 70px 0;
+}
+
+/*define row of footer*/
+footer .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*define size & position of container*/
+footer .container{
+  max-width: 1170px;
+  margin: auto;
+}
+
+footer .container .footerCol{
+  text-align: left;
+  width: 25%;
+  padding: 0 25px;
+}
+
+/*detail of topic*/
+footer .container .footerCol h4{
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+/*topics & line under*/
+footer .container .footerCol h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #d1964c;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+/*remove li & define position to be leftside*/
+footer .container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+
+/*content's detail of each row*/ 
+footer .container ul li{
+  font-size: 16px;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+  padding-bottom: 10px;
+}
+
+/*when all texts are hovered, they will move position on rightside*/
+footer .container ul li:hover{
+  color: white;
+  padding-left: 10px;
+}
+
+/*position of 2 app's img*/
+footer .container img{
+  width: 50%;
+  margin-top: 20px;
+  padding:0px;
+}
+
+/*adjust icons of social to be circle & change their color*/
+footer .footerCol .social a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #3A3D32;
+  transition: all 0.5s ease;
+}
+
+/*when icons are hovered, they will change their background color*/
+footer .footerCol .social a:hover{
+  color: white;
+  background-color: #d1964c;
+}
+
+/* display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  nav{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    text-align: center;
+  }
+  .column {
+    width: 100%;
+    display: block;
+  }
+  
+  .Even{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+
+  .Even .post{
+    margin-left: 25%;
+  }
+
+  .Even .content1{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    padding-bottom: 10%;
+  }
+
+  .Event2{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+
+  }
+
+  .Event2 .post2{
+      margin-left: 25%;
+      margin-bottom: 10%;
+  }
+
+  .service .row{
+    margin-left: 15%;
+
+  }
+
+  .service .row .colum{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  footer .container .row {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    text-align: center;
+    margin-left: 0;
+    float: left;
+  }
+
+  .footerCol {
+    padding-bottom: 20px;
+  }
+}
+
+
+
+
+

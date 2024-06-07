@@ -1,0 +1,703 @@
+*{
+  padding: 0;
+	margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #988E7D;
+  color: black;
+  padding: 35px;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  background-color: #A2ADAF;
+  position: relative;
+  margin: 0 auto;
+  padding: 9px;
+  justify-content: space-evenly;
+}
+
+nav a{
+   display: block;
+   color: white;
+   font-weight: 550;
+   text-decoration: none;
+}
+
+nav a:hover{
+   color: #3A3D32;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #3A3D32;
+}
+
+.user img{
+  margin-left: 10px;
+  border-radius: 50%; /*make pic be a circle*/
+}
+
+/* -------------------------footer--------------------------*/
+/*footer part*/
+footer{
+  margin-top: 17%;
+  background-color: #1f201d;
+  color: white;
+  padding: 70px 0;
+}
+
+/*define row of footer*/
+footer .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*define size & position of container*/
+footer .container{
+  max-width: 1170px;
+  margin: auto;
+  background: none;
+}
+
+footer .container .footerCol{
+  text-align: left;
+  width: 25%;
+  padding: 0 25px;
+  color: white;
+}
+
+/*detail of topic*/
+footer .container .footerCol h4{
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+/*topics & line under*/
+footer .container .footerCol h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #d1964c;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+/*remove li & define position to be leftside*/
+footer .container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*content's detail of each row*/
+footer .container ul li{
+  font-size: 16px;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+  padding-bottom: 10px;
+}
+
+/*when all texts are hovered, they will move position on rightside*/
+footer .container ul li:hover{
+  color: white;
+  padding-left: 10px;
+}
+
+/*position of 2 app's img*/
+footer .container img{
+  width: 50%;
+  margin-top: 20px;
+  padding:0px;
+}
+
+/*adjust icons of social to be circle & change their color*/
+footer .footerCol .social a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #3A3D32;
+  transition: all 0.5s ease;
+}
+
+/*when icons are hovered, they will change their background color*/
+footer .footerCol .social a:hover{
+  color: white;
+  background-color: #d1964c;
+}
+
+
+/* --------------------------signup.html-------------------------*/
+
+.body{
+  margin-top: 50px; /*center*/
+  display: flex; /*make block center*/
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #3A3D32;
+}
+
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+h3{
+  text-align: center;
+}
+
+.content form .userinform{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+margin: 20px;
+}
+
+form .userinform .inputbox{
+  margin-bottom: 15px;
+  width: 45%; /* space between block */
+}
+
+h5{
+ margin-bottom: 6px;
+}
+
+.userinform .inputbox input{
+  height: 10px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid #ccc; /* border text*/
+}
+
+.content form .password{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.password .inputbox input{
+  height: 10px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid #ccc; /* border text*/
+}
+
+form .password .inputbox{
+  margin-bottom: 15px;
+  width: 45%;
+}
+
+/*register bottom*/
+form .button{
+  height: 40px;
+  margin: 35px  /* button size*/
+}
+
+form .button input{
+  height: 100%;
+  width: 100%;
+  color: white;
+  border: none; /* no border */
+  font-weight: 600;
+  font-size: 17px;
+  background-color: #D1964c;
+}
+
+form .button :hover{
+ color: #666666;
+ background-color: #A2ADAF;
+}
+
+
+/* --------------------------login.html-------------------------*/
+
+.margin{
+  padding: 150px;
+}
+.center{
+  position: absolute;
+  width: 400px;
+  top: 55%;      /* make block center */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+}
+.center h1{
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #3A3D32;
+  margin-bottom: 20px;
+}
+
+h5{
+  margin-bottom: 6px;
+}
+
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.txt2{
+  margin-bottom: 20px;
+}
+
+/* sign up*/
+.signup{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #666666;
+}
+.signup a{
+  color: green;
+  text-decoration: none;
+}
+.signup a:hover{
+  text-decoration: underline; /* sign up underline*/
+  color: #988E7D;
+}
+
+/* border text*/
+.inform .txt1 input{
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid #ccc; /* border color and size*/
+  margin-bottom: 15px; /* seperate between username and password*/
+}
+
+.inform .txt2 input{
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid #ccc; /* border color and size*/
+}
+
+/*login bottom*/
+form .login{
+  height: 40px;
+  margin: 35px  /* button size*/
+}
+
+form .login input{
+  height: 100%;
+  width: 100%;
+  color: white;
+  border: none; /* no border */
+  font-weight: 600;
+  font-size: 17px;
+  background-color: #D1964c;
+}
+
+form .login :hover{
+ color: #666666;
+ background-color: #A2ADAF;
+}
+
+/*header*/
+.Home {
+  margin-top: -10px;  /* full header */
+  float: left; /* make it be left */
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.Home a{
+  color: #3A3D32;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* --------------------------welcome.html-------------------------*/
+
+.background{
+	background: url(https://drive.google.com/uc?id=1xyrv81vpe8Bht7KDpNX9Rn37hsE0D1cF) no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.welcome h1{
+  color: white;
+  font-weight: 1000;
+  font-size: 55px;
+  margin-top: 10%;
+  justify-content:center; /* make text center */
+  text-align:center;
+}
+
+.bblock{
+  justify-content:center; /* make text center */
+  text-align:center;
+}
+
+.block{
+  padding: 10px 30px;
+  border: white solid 1px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 17px;
+  background: rgba(255, 255, 255, 0.4);
+  margin-bottom: 20px;
+}
+
+.block a{
+  color:#3A3D32;
+  text-decoration-line: none; /* no underline */
+  font-size: 13px;
+}
+
+.block a:hover{
+  color:wheat;
+  text-decoration-line: underline; /* underline */
+  font-size: 13px;
+}
+
+.bblock button:hover{
+  background:  #D1964c; /* hover background */
+}
+
+/* --------------------------usermanage.html-------------------------*/
+
+.textcenter{
+  padding: 30px;
+}
+.editor{
+  text-align: right;
+}
+
+.right{  /* edit delete */
+  text-align: right;
+}
+
+.sameline{
+  display: flex;
+  flex-direction: row;
+}
+
+h4{
+  margin-top: 20px;
+}
+
+.roundborderbox  {  /* This class used by article to create block of the navigate(e.g. All, Northern, Northeast, etc)  for search and seach criteria(e.g. Round Trip, Departure station, Terminal station, etc) */
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 25px;
+  background-color:#e5e1db;
+  width: 70%;
+  margin:auto;
+  color: black;
+}
+.navbar { /* Style the navigation bar for navigate of search (e.g. find user)*/
+  padding: 6px;
+  text-align: center;
+  width: 100%;
+  overflow: auto;
+}
+.navbar a { /* Navbar links */
+  width: 17%;
+  float: left;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+}
+
+hr.solid {/* horizontal line */
+  border-top: 1px solid #3A3D32;
+}
+.inline { /* used by each <div> in search block to keep all element stay inline */
+  display: inline-block;
+}
+.rcorners { /* used by select box and date box to make it round */
+  border-radius: 25px;
+  border: 1px solid #3A3D32;
+  padding: 8px;
+  margin: 5px; /*แต่ละช่องห่างกันเท่าไหร่ */
+}
+.searchbutton { /* decorate the search button */
+  border-radius: 25px;
+  border: 1px solid #3A3D32;
+  padding: 8px;
+  margin: 5px;
+}
+.searchbutton:hover { /* decorate the search button when mouse over*/
+  background-color: #3A3D32;
+  color: white;
+}
+
+.user{  /* user name */
+  width: 80%;
+  margin-left: 130px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background:  white;
+  color: #D1964c;
+  margin-bottom: 23px;
+}
+
+h4{
+  padding-left: 10px;
+}
+
+.Addaccount{
+  justify-content:center; /* make text center */
+  text-align:center;
+}
+
+button.edit{
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background:  #669999;
+}
+
+button.edit a{
+    color: white;
+    text-decoration-line: none; /* no underline */
+    font-size: 13px;
+}
+
+button.edit :hover {
+  text-decoration-line: underline; /* underline */
+  color: #3A3D32;
+}
+
+button.delete{
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background:  #669999;
+}
+
+button.delete a{
+    color: white;
+    text-decoration-line: none; /* no underline */
+    font-size: 13px;
+}
+
+button.delete :hover {
+  text-decoration-line: underline; /* underline */
+  color: #3A3D32;
+}
+
+button.Add{
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background:  #D1964c;
+}
+
+button.Add a{
+    color: white;
+    text-decoration-line: none; /* no underline */
+    font-size: 13px;
+}
+
+button.Add :hover {
+  text-decoration-line: underline; /* underline */
+  color: #D1964c;
+}
+
+.right button:hover{
+  background: #D1964c; /* change background when hover */
+}
+
+.Addaccount button:hover{
+  background: #666666; /* change background when hover */
+}
+
+/* --------------------------productmanage.html-------------------------*/
+.textcenter{ /* use with user management */
+  color: white;
+  text-align: center;
+  /* text-shadow: 20px -10px #333333; */
+}
+
+.contain_form {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e1db;
+  margin: auto;
+  padding: 30px;
+  width: 80%;
+  border-radius: 20px;
+}
+
+/* reset and add buttons */
+.manageproduct{
+  display: block;
+  text-align: right;
+  margin-right: 20px;
+
+}
+
+.manageproduct button{
+  background-color: #3A3D32;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.manageproduct p{
+  color: white;
+}
+
+/* using inline-block to keep them inline */
+.addnewticketbox {
+  padding: 30px;
+  display: inline-block;
+  width: 95%;
+  text-align: center;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: left;
+}
+
+.addnewticketbox input{
+  border-radius: 5px;
+  border: 1px solid;
+  width: 100%;
+  padding: 10px;
+  height: 30px;
+}
+
+.modifyticketbox {
+  padding: 30px;
+  display: inline-block;
+  width: 95%;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.modifyticketbox button{
+  background-color: #555555;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.modifyticketbox button p{
+  color: white;
+}
+
+/* media query in CSS that targets devices with a maximum width of 768 pixels. */
+@media only screen and (max-width: 768px) {
+  /* make it smaller and easier to use on smaller screens */
+  .contain_form {
+    padding: 20px;
+    width: 80%;
+
+  }
+  .addnewticketbox {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .modifyticketbox{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .manageproduct{
+    text-align: center;
+    margin-left: 65px;
+  }
+}
+
+button.editt a{
+    color:  #3A3D32;
+    text-decoration-line: none; /* no underline */
+    /* font-size: 13px; */
+}
+
+button.editt :hover {
+  text-decoration-line: underline; /* underline */
+  color: white;
+  text-decoration: none;
+}
+
+button.deletee a{
+  color:  #3A3D32;
+  text-decoration-line: none; /* no underline */
+  /* font-size: 13px; */
+}
+
+button.deletee :hover {
+text-decoration-line: underline; /* underline */
+color: white;
+text-decoration: none;
+}
+
+button.reset a{
+  color:  #3A3D32;
+  text-decoration-line: none; /* no underline */
+  font-size: 13px;
+}
+
+button.reset :hover {
+text-decoration-line: underline; /* underline */
+color: white;
+text-decoration: none;
+}
+
+button.addpd a{
+color:  #3A3D32;
+text-decoration-line: none; /* no underline */
+font-size: 13px;
+}
+
+button.addpd :hover {
+text-decoration-line: underline; /* underline */
+color:white;
+text-decoration: none;
+}
+
+.right{  /* edit delete */
+  text-align: right;
+}
+

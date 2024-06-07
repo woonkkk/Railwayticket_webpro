@@ -1,0 +1,527 @@
+
+* { /* All element that use this searchstyle.css will be applied with the same font sans-serif and page margin=0 */
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+/* For the header and navigate bar be the same as the homepage */
+header {
+  background-color: #3A3D32;
+  color: aliceblue;
+  padding: 20px;
+  padding-left: 50px;
+}
+header h1{
+  display: inline-flex;
+  align-items: center;
+}
+header h1 i{
+  margin-left: 10px;
+  margin-bottom: 7px;
+}
+.call {
+  float: right;
+  margin-top: 15px;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 10px;
+}
+.call a{
+  font-size: 9px;
+  text-align: center;
+  padding-left: 10px;
+}
+.login {
+  float: right;
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 5px;
+  padding: 5px;
+}
+.login i a{
+  padding: 2px;
+  color: #3A3D32;
+  text-decoration: none;
+}
+nav{ /* nav that back to home page */
+  display: flex;
+  flex-direction: row;
+  background-color: #A2ADAF;
+  position: relative;
+  margin: 0 auto;
+  padding: 9px;
+  justify-content: space-evenly;
+}
+nav a{
+   display: block;
+   color: white;
+   font-weight: 550;
+   text-decoration: none;
+}
+nav a:hover{
+   color: #3A3D32;
+}
+
+/* ------------------------search.html Page---------------------------*/
+/* background for search page */
+.bg { /* The backgroung image used is located in google drive, so I use url to access and use the image */
+  background-image: url("https://drive.google.com/uc?id=1G-RP1W38Rkuo8UrTD28uWbNSJzei_B3l");
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 1;
+}
+.textcenter { /* This make all text inside this class be in the center and have color #3A3d32 */
+  text-align: center;
+  color: #3A3d32;
+}
+.roundborderbox  {  /* This class used by article to create block of the navigate(e.g. All, Northern, Northeast, etc)  for search and seach criteria(e.g. Round Trip, Departure station, Terminal station, etc) */
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 25px;
+  background-color:#e5e1db;
+  width: 70%;
+  margin:auto;
+  color: black;
+}
+.navbar { /* Style the navigation bar for navigate of search (e.g. All, Northern, Northeast, etc)*/
+  padding: 6px;
+  text-align: center;
+  width: 100%;
+  overflow: auto;
+}
+.navbar a { /* Navbar links */
+  width: 17%;
+  float: left;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+
+}
+.navbar a:hover {
+  border-bottom: 1px solid black;
+}
+hr.solid {/* horizontal line */
+  border-top: 1px solid #3A3D32;
+}
+.inline { /* used by each <div> in search block to keep all element stay inline */
+  display: inline-block;
+}
+.rcorners { /* used by select box and date box to make it round */
+  border-radius: 25px;
+  border: 1px solid #3A3D32;
+  padding: 8px;
+  margin: 5px; /*แต่ละช่องห่างกันเท่าไหร่ */
+}
+.searchbutton { /* decorate the search button */
+  border-radius: 25px;
+  border: 1px solid #3A3D32;
+  padding: 8px;
+  margin: 5px;
+}
+.searchbutton:hover { /* decorate the search button when mouse over*/
+  background-color: #3A3D32;
+  color: white;
+}
+
+/* --------------------------switch HTML checkbox-------------------------*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+/* when click to switch */
+input:checked + .slider {
+  background-color: #d1964c;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #d1964c;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* -------------------------search-result--------------------------*/
+.search-result {/* hide search result section by default */
+  display: none;
+}
+.headforsearchresult { /* area for text "Search Result" */
+  text-align: center;
+  padding: 20px;
+  font-size:larger;
+  background-color: #A2ADAF;
+  color: white;
+}
+.column { /* used by each ticket block  */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  /* background-color: #e5e1db; */
+  border: 1px solid #3A3d32;
+}
+.dummy_box { /* made inside the ticket box have an inside box area for the details of each ticket*/
+  margin: auto;
+  margin-top: 10px;
+  width: 100%;
+  height: 140px;
+  border-radius: 15px;
+  background-color: #e5e1db;
+  margin-bottom: 20px;
+}
+.dummy_text { /* Used for decorate text inside the ticket box (e.g. Departure and Terminal station and date of each ticket) */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.contain_row { /* container of the detail inside the ticket box */
+  display: flex;
+  flex-direction: row;
+  background-color: #e5e1db;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 9px;
+  justify-content: space-evenly;
+}
+.row { /* each detail inside the dummy_box has div into flex. This class use to decorate it to look more balance */
+  padding: 10px;
+  margin: 30px;
+  color: white;
+  color: #3A3D32;
+  text-align: center;
+  font-size:medium;
+}
+#editbox { /* use for decorate the edit button in search page in order to edit each ticket*/
+  color: #3A3D32;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 34px;
+  border: 1px solid #3A3D32;
+}
+#editbox:hover { /* edit button for each ticket when mouse over */
+  background-color: #d1964c;
+  color: white
+}
+.readmoredetail {/* used to decorate the Read more detail button that links to the detail of each ticket */
+  float: right;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background-color: #3A3D32;
+  padding: 7px;
+  border-radius: 20px;
+  /* border: 1px solid #3A3d32; */
+}
+.readmoredetail:hover { /* Read more detail button when mouse over */
+  background-color: #d1964c;
+}
+
+/* --------------------------Detail page-------------------------*/
+.container {/* container for text box (e.g. Passenger ticket (front) and Passenger ticket (back)) */
+  text-align: center;
+  padding: 0px;
+  display: flex;
+  margin: 0px;
+  justify-content: space-evenly;
+}
+.txtbox { /* adjust each text box (e.g. Passenger ticket (front) and Passenger ticket (back)) to have width 40% of page */
+  width: 40%;
+}
+.ticketcontainer {/* container flex of box for front and back of ticket */
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ticketbox { /* each ticket box inside the ticketcontainer */
+  border: 1px solid #3A3d32;
+  border-radius: 20px;
+  padding: 15px;
+  width: 40%;
+}
+.footofticket { /* The text font size on the back of the ticket at the bottom. */
+  font-size: small;
+}
+.right { /* make text float to right */
+  float: right;
+  clear: none;
+}
+.left { /* make text float to left */
+  float: left;
+  clear: none;
+}
+.buynow { /* buy now button */
+  border-radius: 25px;
+  border: 1px solid #3A3D32;
+  background-color: #A2ADAF;
+  padding: 8px;
+  width: 10%;
+  text-align: center;
+  margin: 15px auto;
+  display: block;
+}
+.buynow:hover { /* buy now button when mouse over */
+  background-color: #d1964c;
+}
+.hidelink {/* Change text color and hide underline of link> used by buy now button and Back to previous page button*/
+  color: white;
+  text-decoration: none;
+}
+.imgcontainer { /* article that holds all the (PRECAUTIONS) images. */
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px;
+  padding-left: 110px;
+  border-radius: 20px;
+  border: 1px solid #3A3D32;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.imgcontainer section { /* Each image section under <article class="imgcontainer"> */
+  width: 25% ;
+  flex-grow: 1;
+  padding: 20px;
+}
+@media screen and (max-width: 990px) { /* Image alignment of (PRECAUTIONS) differs according to screen size. */
+  .imgcontainer {
+    padding-left: 50px;
+    flex-wrap: wrap;
+  }
+  .imgcontainer section {
+    width: 40% ;
+    flex-grow: 1;
+    padding: 20px;
+  }
+}
+.backtosearch { /* button Back to previus page */
+  border-radius: 25px;
+  border: 1px solid #3A3D32;
+  background-color: #A2ADAF;
+  padding: 8px;
+  width: 15%;
+  text-align: center;
+  margin: 15px auto;
+  display: block;
+  color: white;
+}
+.TearmCondition_Cancellationarea {
+  background-color: #e5e1db;
+  padding: 20px;
+  /* color: white; */
+}
+.TearmCondition_Cancellation {
+  margin: 50px;
+}
+.TearmCondition_Cancellation li { /* decorate each <li> inside the class TearmCondition_Cancellation */
+  padding: 3px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.backtosearch:hover { /* button Back to previus page when mouse over*/
+  background-color: #d1964c;
+}
+/* -------------------------footer--------------------------*/
+/*footer part*/
+footer{
+  background-color: #1f201d;
+  color: white;
+  padding: 70px 0;
+}
+
+/*define row of footer*/
+footer .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*define size & position of container*/
+footer .container{
+  max-width: 1170px;
+  margin: auto;
+}
+
+footer .container .footerCol{
+  text-align: left;
+  width: 25%;
+  padding: 0 25px;
+  color: white;
+}
+
+/*detail of topic*/
+footer .container .footerCol h4{
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+/*topics & line under*/
+footer .container .footerCol h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #d1964c;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+/*remove li & define position to be leftside*/
+footer .container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*content's detail of each row*/
+footer .container ul li{
+  font-size: 16px;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+  padding-bottom: 10px;
+}
+
+/*when all texts are hovered, they will move position on rightside*/
+footer .container ul li:hover{
+  color: white;
+  padding-left: 10px;
+}
+
+/*position of 2 app's img*/
+footer .container img{
+  width: 50%;
+  margin-top: 20px;
+  padding:0px;
+}
+
+/*adjust icons of social to be circle & change their color*/
+footer .footerCol .social a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #3A3D32;
+  transition: all 0.5s ease;
+}
+
+/*when icons are hovered, they will change their background color*/
+footer .footerCol .social a:hover{
+  color: white;
+  background-color: #d1964c;
+}
+
+/* display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  nav{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    text-align: center;
+  }
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+  .Even{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+
+  .Even .post{
+    margin-left: 25%;
+  }
+
+  .Even .content1{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    padding-bottom: 10%;
+  }
+
+  .Event2{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+
+  }
+
+  .Event2 .post2{
+      margin-left: 25%;
+      margin-bottom: 10%;
+  }
+
+  .service .row{
+    margin-left: 15%;
+
+  }
+
+  .service .row .colum{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  footer .container .row {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    text-align: center;
+    margin-left: 0;
+    float: left;
+  }
+
+  .footerCol {
+    padding-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+

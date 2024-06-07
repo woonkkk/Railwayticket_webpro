@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <link rel="stylesheet" href="login.css">
+    <button class="Home"><a href="/usermanage"> Back </a></i>
+    </button>
+    <script src="https://kit.fontawesome.com/7ac9749b66.js" crossorigin="anonymous"></script>
+    <script src="/js/authen.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Signup</title>
+  </header>
+  <nav>
+    <!--defines the hyperlink tags-->
+    <a href="/">Home</a>
+    <a href="/aboutus">About us</a>
+    <a href="/#Timetable">Timetable</a> <!--link to sections within the same page-->
+    <a href="/#Event">Event</a>
+    <a href="/#service">Service</a>
+    <a href="/#contact">Contact us</a>
+  </nav>
+
+<body>
+<div class="body" onload="authen()">
+  <div class="container">
+         <h3>Add Account</h3> <!-- title for this form -->
+    <div class="content">
+       <form class="signupcheck" id="signup-input" action="javascript:addadmin()">
+        <div class="userinform">
+          <div class="inputbox">
+            <h5>Full Name:</h5>
+            <input type="text" id="admin_fullname" placeholder="Enter new admin name" required>
+          </div>
+          <div class="inputbox">
+            <h5>Username:</h5>
+            <input type="text" id="admin_username" placeholder="Enter new admin username" required>
+          </div>
+          <div class="inputbox">
+            <h5>Email:</h5>
+            <input type="text" id="admin_email" placeholder="Enter new admin email" required>
+          </div>
+          <div class="inputbox">
+            <h5>Phone number:</h5>
+            <input type="text" id="admin_phonenum" placeholder="Enter new admin number" required>
+          </div>
+          <div class="inputbox">
+            <h5>Role:</h5>
+            <input type="text" id="admin_role" placeholder="Enter new admin role" required>
+          </div>
+          <div class="inputbox">
+            <h5>Address:</h5>
+            <input type="text" id="admin_address" placeholder="Enter new admin Address" required>
+          </div>
+        </div>
+        <div class="password">
+          <div class="inputbox">
+            <h5>Password:</h5>
+            <input type="password" id="admin_password" placeholder="Enter new admin password" required>
+          </div>
+          <div class="inputbox">
+            <h5>Confirm password:</h5>
+            <input type="password" id="admin_confpassword" placeholder="Confirm new admin password" required>
+          </div>
+        </div>
+        <div class="button"> 
+          <!-- signup-button -->
+          <input type="submit" value="Add Account">
+          <br>
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="body" onload="updateadmin()">
+  <div class="container">
+         <h3>Update Account</h3> <!-- title for this form -->
+    <div class="content">
+      <!-- class="signupcheck" id="signup-input" -->
+       <form  action="javascript:updateadmin()">
+        <div class="userinform">
+          <div class="inputbox">
+            <h5>Full Name:</h5>
+            <input type="text" id="admin_fullnameup" placeholder="Enter new admin name" required>
+          </div>
+          <div class="inputbox">
+            <h5>Username:</h5>
+            <input type="text" id="admin_usernameup" placeholder="Enter new admin username" required>
+          </div>
+          <div class="inputbox">
+            <h5>Email:</h5>
+            <input type="text" id="admin_emailup" placeholder="Enter new admin email" required>
+          </div>
+          <div class="inputbox">
+            <h5>Phone number:</h5>
+            <input type="text" id="admin_phonenumup" placeholder="Enter new admin number" required>
+          </div>
+          <div class="inputbox">
+            <h5>Role:</h5>
+            <input type="text" id="admin_roleup" placeholder="Enter new admin role" required>
+          </div>
+          <div class="inputbox">
+            <h5>Address:</h5>
+            <input type="text" id="admin_addressup" placeholder="Enter new admin Address" required>
+          </div>
+          <div class="inputbox">
+            <h5>Admin ID:</h5>
+          <input type="text" id="admin_IDup" placeholder="Enter admin ID to update" required>
+          </div>
+        </div>
+        <div class="password">
+          <div class="inputbox">
+            <h5>Password:</h5>
+            <input type="password" id="admin_passwordup" placeholder="Enter new admin password" required>
+          </div>
+          <div class="inputbox">
+            <h5>Confirm password:</h5>
+            <input type="password" id="admin_confpasswordup" placeholder="Confirm new admin password" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Update Account" >
+          <br>
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<!--footer part-->
+<footer id = "contact"><!--id for hyper link-->
+  <!--content inside footer-->
+  <div class="container">
+    <div class="row">
+      <div class="footerCol"> <!-- 3 column-->
+        <h4>CONTACT US</h4>
+        <ul>
+          <!--contant of each column-->
+          <li style="padding-bottom: 20px;"><p><i class="fa-solid fa-house"></i>1 Rongmuang Rd. Rongmuang Pathumwan Bangkok 10330</p></li>
+          <li><p><i class="fa-solid fa-phone"></i>Call Center  1690</p></li>
+          <li><p><i class="fa-solid fa-envelope"></i>webmaster.srt@railway.co.th</p></li>
+        </ul>
+        <!--insert img-->
+        <div class="app">
+          <img src="https://drive.google.com/uc?id=1UbLupP9uuqb7PYHmDf5aX5pO8Y6G3EhO" alt="GooglePlay">
+          <img src="https://drive.google.com/uc?id=1z_D8JYqVd__6OjuVOUVKqW8GXDKufVI6" alt="Applestore">
+        </div>
+      </div>
+      <div class="footerCol">
+        <h4>GET HELP</h4>
+        <ul>
+          <li><p>Site Map</p></li>
+          <li><p>Knowledge Station</p></li>
+          <li><p>Site Policies</p></li>
+          <li><p>News</p></li>
+        </ul>
+      </div>
+      <div class="footerCol" style="margin-left: 50px;">
+        <h4>FOLLOW US</h4>
+        <div class="social"> <!--icons of social media-->
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
+

@@ -1,0 +1,279 @@
+* { /* All element that use this searchstyle.css will be applied with the same font sans-serif and page margin=0 */
+    font-family: sans-serif;
+    margin: 0px;
+  }
+  /* -------------------------Header and Navigation part--------------------------*/
+  /* For the header and navigate bar be the same as the homepage */
+  header {
+    background-color: #3A3D32;
+    color: aliceblue;
+    padding: 20px;
+    padding-left: 50px;
+  }
+  header h1{
+    display: inline-flex;
+    align-items: center;
+  }
+  header h1 i{
+    margin-left: 10px;
+    margin-bottom: 7px;
+  }
+  .call {
+    float: right;
+    margin-top: 15px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 10px;
+  }
+  .call a{
+    font-size: 9px;
+    text-align: center;
+    padding-left: 10px;
+  }   
+  .login {
+    float: right;
+    border-radius: 10px; 
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .login i a{
+    padding: 2px;
+    color: #3A3D32;
+    text-decoration: none; 
+  }
+  nav{ /* nav that back to home page */
+    display: flex;
+    flex-direction: row;
+    background-color: #A2ADAF;
+    position: relative;
+    margin: 0 auto;
+    padding: 9px;
+    justify-content: space-evenly;
+  }
+  nav a{
+     display: block;
+     color: white;
+     font-weight: 550;
+     text-decoration: none;
+  }
+  nav a:hover{
+     color: #3A3D32;
+  }
+
+  /* -------------------------body part--------------------------*/
+  
+/* container of all .column */
+.container { 
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 5px auto;
+    border-radius: 80px;
+    padding: 9px;
+    justify-content: space-evenly;
+}
+
+/* each person box */
+.column { 
+    margin: 10px;
+    width: 20%;
+    border-radius: 20px;
+    padding: 20px ;
+    /* border: 1px solid #3A3D32; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* (e.g. 6488xxx sophomore student(ICT international program)) */
+#title { 
+    color: grey;
+}
+
+/* hide underline and change text color (email and linkedIn) */
+#hidelink {
+    text-decoration: none;
+    color: #3A3D32;
+}
+
+/* contact button */
+.contactbutton {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* text size of detail: Address,Phone number,Instagram */
+.detail {
+    font-size: small;
+}
+
+/* size of people image */
+#peopleimg {
+    width: 290px;
+    height: 164px ;
+}
+
+/* -------------------------footer part--------------------------*/
+footer{
+    background-color: #1f201d;
+    color: white;
+    padding: 70px 0;
+  }
+  
+  /*define row of footer*/
+  footer .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /*define size & position of container*/
+  footer .container{
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  footer .container .footerCol{
+    text-align: left;
+    width: 25%;
+    padding: 0 25px;
+    color: white;
+  }
+  
+  /*detail of topic*/
+  footer .container .footerCol h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  /*topics & line under*/
+  footer .container .footerCol h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #d1964c;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  
+  /*remove li & define position to be leftside*/
+  footer .container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+  }
+  
+  /*content's detail of each row*/ 
+  footer .container ul li{
+    font-size: 16px;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    padding-bottom: 10px;
+  }
+  
+  /*when all texts are hovered, they will move position on rightside*/
+  footer .container ul li:hover{
+    color: white;
+    padding-left: 10px;
+  }
+  
+  /*position of 2 app's img*/
+  footer .container img{
+    width: 50%;
+    margin-top: 20px;
+    padding:0px;
+  }
+  
+  /*adjust icons of social to be circle & change their color*/
+  footer .footerCol .social a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #3A3D32;
+    transition: all 0.5s ease;
+  }
+  
+  /*when icons are hovered, they will change their background color*/
+  footer .footerCol .social a:hover{
+    color: white;
+    background-color: #d1964c;
+  }
+  
+  /* display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    nav{
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      text-align: center;
+    }
+    .column {
+      width: 100%;
+      display: block;
+    }
+    
+    .Even{
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+    }
+  
+    .Even .post{
+      margin-left: 25%;
+    }
+  
+    .Even .content1{
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      padding-bottom: 10%;
+    }
+  
+    .Event2{
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+  
+    }
+  
+    .Event2 .post2{
+        margin-left: 25%;
+        margin-bottom: 10%;
+    }
+  
+    .service .row{
+      margin-left: 15%;
+  
+    }
+  
+    .service .row .colum{
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      text-align: center;
+    }
+  
+    footer .container .row {
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      text-align: center;
+      margin-left: 0;
+      float: left;
+    }
+  
+    .footerCol {
+      padding-bottom: 20px;
+    }
+  }

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="searchstyle.css">
+  <script src="https://kit.fontawesome.com/7ac9749b66.js" crossorigin="anonymous"></script>
+  <!-- <script src="../../search.js"></script> -->
+  <script src="/js/authen.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <!-- Header part -->
+  <header>
+    <h1>ThaiRailways Search<i class="fa-sharp fa-solid fa-location-dot"></i></h1>
+    <button class="login">
+      <i class="fa-sharp fa-solid fa-user"><a href="/login"> Login</a></i>
+    </button>
+    <div class='call'>
+      <i class="fa-sharp fa-solid fa-phone"><a>Call center 1690</a></i>
+    </div>
+  </header>
+
+  <!--Navigation part-->
+  <nav>
+    <!--defines the hyperlink tags-->
+    <a href="/">Home</a>
+    <a href="/aboutus">About us</a>
+    <a href="/#Timetable">Timetable</a> <!--link to sections within the same page-->
+    <a href="/#Event">Event</a>
+    <a href="/#service">Service</a>
+    <a href="/#contact">Contact us</a>
+  </nav>
+
+  <!-- background of search page -->
+  <div class="bg textcenter">
+
+    <br><br><br>
+    <h2> Choose your destination with ThaiRailways</h2>
+    <br><br><br>
+
+    <!-- the top part of search box -->
+    <article class="roundborderbox">
+      <div class="navbar">
+        <a href="#"><i class="All"></i> All </a>
+        <a href="#"><i class="N"></i> Northern line </a>
+        <a href="#"><i class="NE"></i> Northeast line </a>
+        <a href="#"><i class="EL"></i> East line </a>
+        <a href="#"><i class="S"></i> South line </a>
+      </div>
+
+      <hr class="solid"> <br>
+
+      <!-- the below part of search box(e.g. search criteria) -->
+      <form action="javascript:search()" >
+        <!-- Departure station input part -->
+        <!-- <div class="inline">
+          <input type="text" placeholder=" Departure station" name="start" id="destation" style="text-align: center;">
+        </div> -->
+        <div class="inline">
+          <select name="start" id="destation" class="rcorners">
+              <option value="" selected> Departure station </option>
+              <option value="Bangkok"> Bangkok </option>
+              <option value="Chiang Mai"> Chiang Mai</option>
+              <option value="Chang Rai"> Chang Rai</option>
+              <option value="Kra Bi"> Kra Bi</option>
+              <option value="Kanchana Buri"> Kanchana Buri</option>
+              <option value="Nakkorn Phathom"> Nakkorn Phathom</option>
+              <option value="Ubon"> Ubon</option>
+              <option value="Suphan Buri"> Suphan Buri</option>
+          </select>
+      </div>
+
+      <select name="end" id="terstation" class="rcorners">
+          <option value="" selected> Terminal station </option>
+          <option value="Bangkok"> Bangkok </option>
+          <option value="Chiang Mai"> Chiang Mai</option>
+          <option value="Chang Rai"> Chang Rai</option>
+          <option value="Kra Bi"> Kra Bi</option>
+          <option value="Kanchana Buri"> Kanchana Buri</option>
+          <option value="Nakkorn Phathom"> Nakkorn Phathom</option>
+          <option value="Ubon"> Ubon</option>
+          <option value="Suphan Buri"> Suphan Buri</option>
+      </select>
+        <!-- Terminal station input part -->
+        <!-- <input type="text" placeholder=" Terminal station" name="end" id="terstation" style="text-align: center;"> -->
+        <!-- Date input part -->
+        <input type="date" name="traveldate" class="rcorners" id="datesearch">
+        <!-- search button -->
+        <button type="submit" id="searchbutton" class="searchbutton"> Search </button>
+        <br><br>
+      </form>
+
+    </article>
+    <br><br><br><br><br><br><br>
+  </div>
+
+  <!-- area to show the search result -->
+  <div id="search_result"></div>
+
+
+</body>
+
+<!-- <script>
+      const searchInput = document.getElementById('search-input');
+      const searchEndpoint = 'http://localhost:3000'; // Use http instead of https for localhost
+      const toallsearch = '/search-submit';
+      const searchButton = document.getElementById('search-button');
+      const searchResults = document.getElementById('search-results');
+
+      searchButton.addEventListener('click', async (event) => {
+        event.preventDefault();
+        window.location.href = 'http://localhost:3000/search-submit';
+      });
+</script> -->
+
+<!--footer part-->
+<footer id="contact"><!--id for hyper link-->
+  <!--content inside footer-->
+  <div class="container">
+    <div class="row">
+      <div class="footerCol"> <!-- 3 column-->
+        <h4>CONTACT US</h4>
+        <ul>
+          <!--contant of each column-->
+          <li style="padding-bottom: 20px;">
+            <p><i class="fa-solid fa-house"></i>1 Rongmuang Rd. Rongmuang Pathumwan Bangkok 10330</p>
+          </li>
+          <li>
+            <p><i class="fa-solid fa-phone"></i>Call Center 1690</p>
+          </li>
+          <li>
+            <p><i class="fa-solid fa-envelope"></i>webmaster.srt@railway.co.th</p>
+          </li>
+        </ul>
+        <!--insert img-->
+        <div class="app">
+          <img src="https://drive.google.com/uc?id=1UbLupP9uuqb7PYHmDf5aX5pO8Y6G3EhO" alt="GooglePlay">
+          <img src="https://drive.google.com/uc?id=1z_D8JYqVd__6OjuVOUVKqW8GXDKufVI6" alt="Applestore">
+        </div>
+      </div>
+      <div class="footerCol">
+        <h4>GET HELP</h4>
+        <ul>
+          <li>
+            <p>Site Map</p>
+          </li>
+          <li>
+            <p>Knowledge Station</p>
+          </li>
+          <li>
+            <p>Site Policies</p>
+          </li>
+          <li>
+            <p>News</p>
+          </li>
+        </ul>
+      </div>
+      <div class="footerCol" style="margin-left: 50px;">
+        <h4>FOLLOW US</h4>
+        <div class="social"> <!--icons of social media-->
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>
